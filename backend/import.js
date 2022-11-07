@@ -1,7 +1,5 @@
 import Excel from 'exceljs';
 import  fs  from 'fs';
-// import fs from fs;
-// import * as tools from './tools.js';
 
 export const getTranslations = async () => {
     const wb = new Excel.Workbook();
@@ -40,10 +38,7 @@ export const getTranslations = async () => {
 console.log('importing translations...');
 
 const translations = await getTranslations();
-// fs.writeFile('../src/data/translations.json', JSON.stringify(translations), () => {
-// 	console.log('finished')
-// });
 
-fs.writeFile('./src/data/translations.json', JSON.stringify(translations), (e) => {
-	console.log(e.message)
+fs.writeFile('./src/data/translations.json', JSON.stringify(translations), () => {
+	console.log('finished')
 });
