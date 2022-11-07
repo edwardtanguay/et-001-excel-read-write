@@ -2,7 +2,7 @@
 
 This project uses the exceljs npm package to show how to read from and write to Excel files.
 
-![grafik](https://user-images.githubusercontent.com/446574/200328545-435568f3-a7ea-4928-8e11-fe60bfdeef44.png)
+![grafik](https://user-images.githubusercontent.com/446574/200328886-83cd1346-2ad4-4530-903a-bbcc1f5510d5.png)
 
 ## setup
 
