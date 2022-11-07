@@ -1,0 +1,4 @@
+- x create backend/import.js
+- create npm script to execute import
+- program import.js to extract data from excel file to javascript array of objects
+- save javascript object as JSON file (JSON.stringify())
