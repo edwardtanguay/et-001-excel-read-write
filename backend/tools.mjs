@@ -1,10 +1,9 @@
 import Excel from 'exceljs';
 
-const getTranslations = async () => {
+export const getTranslations = async () => {
     const wb = new Excel.Workbook();
     await wb.xlsx.readFile('./src/data/translations.xlsx');
     const translations = [];
-    // const ws = wb.getWorksheet('Saved translations');
     const ws = wb.getWorksheet(1);
     for (let row = 2; row <= 100000; row++) {
         const fromLanguageCell = `A${row}`;
@@ -33,5 +32,3 @@ const getTranslations = async () => {
     }
     return translations;
 };
-
-export default await getTranslations();
