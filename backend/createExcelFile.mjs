@@ -1,6 +1,6 @@
 import Excel from 'exceljs';
 
-const fileName = './src/data/test.xlsx';
+const fileName = './backend/output/test.xlsx';
 
 const wb = new Excel.Workbook();
 const ws = wb.addWorksheet('Translations');
