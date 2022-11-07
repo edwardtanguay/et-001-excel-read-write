@@ -3,7 +3,6 @@ import fs from 'fs';
 
 console.log('importing translations...');
 
-
 (async () => {
 	const translations = await tools.getTranslations();
 
