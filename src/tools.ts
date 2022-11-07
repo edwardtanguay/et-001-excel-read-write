@@ -1,6 +1,6 @@
 import Excel from 'exceljs';
 
-const getTranslations = async () => {
+export const getTranslations = async () => {
     const wb = new Excel.Workbook();
     await wb.xlsx.readFile('./src/data/translations.xlsx');
     const translations = [];
@@ -33,5 +33,3 @@ const getTranslations = async () => {
     }
     return translations;
 };
-
-export default await getTranslations();
